@@ -8,30 +8,30 @@ export const DevotionalExperience: React.FC = () => {
       title: 'Bhajan Sandhya',
       description: 'Soulful musical evenings captured with pristine multitrack audio and warm cinematic lighting.',
       icon: Music,
-      image: 'https://images.unsplash.com/photo-1604928169128-444f9c8f00db?auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1568219656418-15c329312bf1?auto=format&fit=crop&q=80',
     },
     {
       title: 'Sankirtan & Satsang',
       description: 'Uninterrupted devotion broadcasted globally with multi-camera setups ensuring everyone feels present.',
       icon: Users,
-      image: 'https://images.unsplash.com/photo-1596706030999-5249419163e8?auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1733158661925-bd55182a2f10?auto=format&fit=crop&q=80',
     },
     {
       title: 'Live Darshan',
       description: 'Bringing the temple to your screens with high-definition, zero-latency continuous live streams.',
       icon: Radio,
-      image: 'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1657020441669-10a9c43b667e?auto=format&fit=crop&q=80',
     },
     {
       title: 'Spiritual Events',
       description: 'Documentary-style cinematography that preserves the sacred essence and scale of religious gatherings.',
       icon: Camera,
-      image: 'https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&q=80',
+      image: '/assets/hero-banner.jpg',
     }
   ];
 
   return (
-    <section className="py-20 sm:py-32 bg-brand-primary border-t border-white/5 relative overflow-hidden">
+    <section className="py-20 sm:py-32 bg-brand-teal border-t border-white/5 relative overflow-hidden">
       {/* Decorative Indian Pattern Background - Subtle */}
       <div 
         className="absolute inset-0 opacity-[0.03] pointer-events-none mix-blend-overlay"
@@ -52,14 +52,14 @@ export const DevotionalExperience: React.FC = () => {
           >
             <div className="inline-flex items-center gap-3 mb-6">
               <span className="w-10 h-[1px] bg-accent-gold" />
-              <span className="font-sans text-xs font-semibold text-accent-gold uppercase tracking-[0.2em]">
+              <span className="font-sans text-xs text-accent-gold uppercase tracking-[0.2em] font-medium">
                 Spiritual Essence
               </span>
             </div>
             
-            <h2 className="font-cormorant text-4xl sm:text-5xl lg:text-6xl font-medium text-text-light leading-[1.1] mb-6">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl text-text-light leading-[1.1] mb-6 font-cormorant font-semibold">
               Experience the Divine, <br />
-              <span className="text-accent-gold italic font-light">Wherever You Are.</span>
+              <span className="text-accent-gold">Wherever You Are.</span>
             </h2>
             
             <p className="text-base text-text-light/70 font-sans leading-relaxed mb-8">
@@ -72,7 +72,7 @@ export const DevotionalExperience: React.FC = () => {
               <div className="flex -space-x-4">
                 {[1, 2, 3].map((i) => (
                   <div key={i} className="w-12 h-12 rounded-full border-2 border-brand-primary bg-brand-dark flex items-center justify-center overflow-hidden">
-                    <img src={`https://images.unsplash.com/photo-1604928169128-444f9c8f00db?auto=format&fit=crop&q=80&w=100&h=100`} alt="" className="w-full h-full object-cover opacity-80" />
+                    <img src={`https://images.unsplash.com/photo-1568219656418-15c329312bf1?auto=format&fit=crop&q=80&w=100&h=100`} alt="" className="w-full h-full object-cover opacity-80" />
                   </div>
                 ))}
               </div>
@@ -109,7 +109,7 @@ export const DevotionalExperience: React.FC = () => {
                       <div className="w-10 h-10 rounded-full bg-accent-gold/20 backdrop-blur-md border border-accent-gold/30 flex items-center justify-center mb-4 text-accent-gold">
                         <Icon className="w-5 h-5" />
                       </div>
-                      <h3 className="font-cormorant text-2xl font-medium text-text-light mb-2">
+                      <h3 className="text-2xl text-text-light mb-2 font-cormorant font-medium">
                         {exp.title}
                       </h3>
                       <p className="text-sm text-text-light/70 font-sans leading-relaxed group-hover:text-text-light/90 transition-colors">

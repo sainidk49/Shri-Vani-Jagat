@@ -8,13 +8,13 @@ export const CtaSection: React.FC = () => {
       {/* Cinematic Background */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1598890777032-bde5aed30263?auto=format&fit=crop&q=80" 
+          src="/assets/hero-banner.jpg" 
           alt="Live event production" 
-          className="w-full h-full object-cover object-center opacity-40 scale-105"
+          className="w-full h-full object-cover object-center opacity-60 scale-105"
         />
-        <div className="absolute inset-0 bg-brand-primary/80" />
+        <div className="absolute inset-0 bg-brand-primary/65" />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-primary via-transparent to-brand-primary/90" />
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-brand-deep/25" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -24,10 +24,10 @@ export const CtaSection: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-cormorant text-5xl sm:text-6xl lg:text-7xl font-medium text-text-light tracking-tight mb-6 drop-shadow-xl">
+          <h2 className="text-5xl sm:text-6xl lg:text-7xl text-text-light tracking-tight mb-6 drop-shadow-xl font-cormorant font-semibold">
             Have an Event to Broadcast?
           </h2>
-          <p className="text-lg sm:text-xl text-text-light/90 font-sans font-light leading-relaxed max-w-2xl mx-auto mb-10 drop-shadow">
+          <p className="text-lg sm:text-xl text-text-light/90 font-sans font-normal leading-relaxed max-w-2xl mx-auto mb-10 drop-shadow">
             Let's bring your celebration, devotion and special moments to audiences everywhere.
           </p>
 
@@ -37,7 +37,7 @@ export const CtaSection: React.FC = () => {
                 const contactForm = document.getElementById('contact');
                 contactForm?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="w-full sm:w-auto px-8 py-4 rounded bg-accent-gold hover:bg-yellow-600 text-brand-primary font-sans text-sm font-semibold tracking-wide transition-all shadow-2xl flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-4 rounded bg-accent-gold hover:bg-gold-soft text-brand-primary font-sans text-sm font-semibold tracking-wide transition-all shadow-2xl flex items-center justify-center gap-2"
             >
               <Mail className="w-4 h-4" />
               <span>Contact Us</span>
@@ -46,7 +46,7 @@ export const CtaSection: React.FC = () => {
               href="https://youtube.com/@shreevanijagat"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 rounded bg-white/10 hover:bg-white/20 backdrop-blur-md text-text-light border border-white/20 font-sans text-sm font-semibold tracking-wide transition-all shadow-xl flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-8 py-4 rounded bg-white/10 hover:bg-white/20 backdrop-blur-md text-text-light border border-white/20 font-sans text-sm tracking-wide transition-all shadow-xl flex items-center justify-center gap-2 font-semibold"
             >
               <Youtube className="w-5 h-5 text-red-500" />
               <span>Watch on YouTube</span>

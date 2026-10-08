@@ -67,10 +67,10 @@ I would like to inquire about booking your services:
           {/* Left Side: Contact Information & Direct Concierge */}
           <div className="lg:col-span-5 space-y-6 sm:space-y-8">
             <div>
-              <span className="text-xs font-semibold text-accent-gold tracking-[0.2em] uppercase">
+              <span className="text-xs text-accent-gold tracking-[0.2em] uppercase font-medium">
                 Reserve Your Date
               </span>
-              <h2 className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-medium text-text-light tracking-tight mt-2">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl text-text-light tracking-tight mt-2 font-cormorant font-semibold">
                 Let Us Preserve Your Sacred Celebration
               </h2>
               <p className="mt-4 text-sm sm:text-base text-text-light/70 font-sans leading-relaxed">
@@ -112,7 +112,7 @@ I would like to inquire about booking your services:
 
             {/* Studio Offices Locations */}
             <div className="p-6 rounded-xl bg-brand-dark border border-white/5 space-y-4 shadow-sm">
-              <p className="text-xs font-bold uppercase tracking-wider text-accent-gold">
+              <p className="text-xs uppercase tracking-wider text-accent-gold font-medium">
                 Studio Hubs:
               </p>
               {BRAND_DATA.locations.map((loc) => (
@@ -138,7 +138,7 @@ I would like to inquire about booking your services:
                 <div className="w-20 h-20 rounded-full bg-emerald-900/30 border border-emerald-500/30 flex items-center justify-center mx-auto text-emerald-500">
                   <CheckCircle className="w-10 h-10" />
                 </div>
-                <h3 className="font-cormorant text-3xl font-bold text-text-light">
+                <h3 className="text-3xl text-text-light font-cormorant font-medium">
                   Inquiry Received with Honor
                 </h3>
                 <p className="text-base text-text-light/70 max-w-md mx-auto">
@@ -151,7 +151,7 @@ I would like to inquire about booking your services:
                     href={generateWhatsAppLink()}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-8 py-4 rounded bg-[#25D366] hover:bg-[#1EBE5D] text-white font-sans text-sm font-semibold tracking-wide transition-all shadow-xl"
+                    className="inline-flex items-center gap-2 px-8 py-4 rounded bg-[#25D366] hover:bg-[#1EBE5D] text-white font-sans text-sm tracking-wide transition-all shadow-xl font-semibold"
                   >
                     <MessageCircle className="w-5 h-5" />
                     <span>Open in WhatsApp for Faster Response</span>
@@ -161,7 +161,7 @@ I would like to inquire about booking your services:
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
                 <div className="border-b border-white/10 pb-5 mb-4">
-                  <h3 className="font-cormorant text-2xl sm:text-3xl font-medium text-text-light">
+                  <h3 className="text-2xl sm:text-3xl text-text-light font-cormorant font-medium">
                     Check Date Availability & Request Quotation
                   </h3>
                   <p className="text-sm text-text-light/60 mt-2">
@@ -293,7 +293,7 @@ I would like to inquire about booking your services:
                 <div className="pt-4 flex flex-col sm:flex-row gap-4">
                   <button
                     type="submit"
-                    className="flex-1 px-8 py-4 rounded bg-accent-gold hover:bg-yellow-600 text-brand-primary font-sans text-sm font-semibold tracking-wide transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl"
+                    className="flex-1 px-8 py-4 rounded bg-accent-gold hover:bg-gold-soft text-brand-primary font-sans text-sm tracking-wide transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl font-semibold"
                   >
                     <span>BOOK YOUR EVENT</span>
                     <ArrowRight className="w-4 h-4" />
@@ -303,7 +303,7 @@ I would like to inquire about booking your services:
                     href={generateWhatsAppLink()}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="sm:w-auto px-8 py-4 rounded bg-[#25D366] hover:bg-[#1EBE5D] text-white font-sans text-sm font-semibold tracking-wide transition-all flex items-center justify-center gap-2 shadow-xl"
+                    className="sm:w-auto px-8 py-4 rounded bg-[#25D366] hover:bg-[#1EBE5D] text-white font-sans text-sm tracking-wide transition-all flex items-center justify-center gap-2 shadow-xl font-semibold"
                   >
                     <MessageCircle className="w-5 h-5" />
                     <span>WhatsApp</span>

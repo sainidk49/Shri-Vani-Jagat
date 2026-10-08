@@ -17,14 +17,14 @@ export const LiveNow: React.FC = () => {
         >
           <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-red-500/30 bg-red-500/10 mb-6">
             <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
-            <span className="text-xs font-semibold text-red-400 uppercase tracking-[0.2em]">
+            <span className="text-xs text-red-400 uppercase tracking-[0.2em] font-medium">
               LIVE NOW
             </span>
           </div>
-          <h2 className="font-cormorant text-4xl sm:text-5xl lg:text-6xl font-medium text-text-light tracking-tight mb-6">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl text-text-light tracking-tight mb-6 font-cormorant font-semibold">
             Featured Live Broadcast
           </h2>
-          <p className="text-base sm:text-lg text-text-light/80 font-sans font-light leading-relaxed">
+          <p className="text-base sm:text-lg text-text-light/80 font-sans font-normal leading-relaxed">
             Experience the divine energy in real-time. Join our global audience in this beautiful spiritual gathering.
           </p>
         </motion.div>
@@ -54,7 +54,7 @@ export const LiveNow: React.FC = () => {
             href="https://www.youtube.com/live/qHOn4IIoMVY?si=E8TJY9vb2BYuYU26"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded bg-[#FF0000] hover:bg-red-700 text-white font-sans text-sm font-semibold tracking-wide transition-all shadow-xl hover:shadow-red-500/20 group"
+            className="inline-flex items-center gap-3 px-8 py-4 rounded bg-[#FF0000] hover:bg-red-700 text-white font-sans text-sm tracking-wide transition-all shadow-xl hover:shadow-red-500/20 group font-semibold"
           >
             <Youtube className="w-5 h-5 group-hover:scale-110 transition-transform" />
             <span>Watch Live on YouTube &rarr;</span>

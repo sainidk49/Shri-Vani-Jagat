@@ -11,7 +11,7 @@ export const FAQ: React.FC = () => {
   };
 
   return (
-    <section className="py-20 sm:py-32 bg-brand-primary border-t border-white/5 relative">
+    <section className="py-20 sm:py-32 bg-brand-teal border-t border-white/5 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -19,11 +19,11 @@ export const FAQ: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-12 sm:mb-16"
         >
-          <span className="text-xs font-semibold text-accent-gold tracking-[0.2em] uppercase flex items-center justify-center gap-1.5">
+          <span className="text-xs text-accent-gold tracking-[0.2em] uppercase flex items-center justify-center gap-1.5 font-medium">
             <HelpCircle className="w-3.5 h-3.5 text-accent-gold" />
             Client Assurance
           </span>
-          <h2 className="font-cormorant text-3xl sm:text-4xl md:text-5xl font-medium text-text-light tracking-tight mt-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-text-light tracking-tight mt-2 font-cormorant font-semibold">
             Frequently Asked Questions
           </h2>
         </motion.div>
@@ -54,7 +54,7 @@ export const FAQ: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 pt-1 text-sm sm:text-base text-text-light/70 font-sans font-light leading-relaxed border-t border-white/5 bg-brand-primary">
+                  <div className="px-5 pb-5 sm:px-6 sm:pb-6 pt-1 text-sm sm:text-base text-text-light/70 font-sans font-normal leading-relaxed border-t border-white/5 bg-brand-primary">
                     {item.a}
                   </div>
                 )}

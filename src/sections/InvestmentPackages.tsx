@@ -19,12 +19,12 @@ export const InvestmentPackages: React.FC<InvestmentPackagesProps> = ({ onOpenBo
         >
           <div className="inline-flex items-center gap-3 mb-6 justify-center">
             <span className="w-10 h-[1px] bg-accent-gold" />
-            <span className="font-sans text-xs font-semibold text-accent-gold uppercase tracking-[0.2em]">
+            <span className="font-sans text-xs text-accent-gold uppercase tracking-[0.2em] font-medium">
               Curated Collections
             </span>
             <span className="w-10 h-[1px] bg-accent-gold" />
           </div>
-          <h2 className="font-cormorant text-4xl sm:text-5xl lg:text-6xl font-medium text-text-light tracking-tight mt-2">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl text-text-light tracking-tight mt-2 font-cormorant font-semibold">
             Investment & Production Suites
           </h2>
           <p className="mt-6 text-sm sm:text-base text-text-light/70 font-sans">
@@ -49,7 +49,7 @@ export const InvestmentPackages: React.FC<InvestmentPackagesProps> = ({ onOpenBo
               }`}
             >
               {pkg.highlighted && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full bg-accent-gold text-brand-primary text-xs font-bold tracking-[0.2em] uppercase shadow-lg flex items-center gap-2 whitespace-nowrap">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full bg-accent-gold text-brand-primary text-xs tracking-[0.2em] uppercase shadow-lg flex items-center gap-2 whitespace-nowrap font-medium">
                   <Sparkles className="w-3.5 h-3.5" />
                   Most Requested
                 </div>
@@ -57,14 +57,14 @@ export const InvestmentPackages: React.FC<InvestmentPackagesProps> = ({ onOpenBo
 
               <div>
                 <div className="mb-6">
-                  <h3 className="font-cormorant text-2xl sm:text-3xl font-medium text-text-light">
+                  <h3 className="text-2xl sm:text-3xl text-text-light font-cormorant font-medium">
                     {pkg.name}
                   </h3>
                   <p className="text-sm text-text-light/50 mt-2 font-sans">{pkg.tagline}</p>
                 </div>
 
                 <div className="py-3 px-4 rounded-lg bg-white/5 border border-white/10 mb-8 flex items-center justify-between">
-                  <span className="text-xs text-text-light/70 font-medium uppercase tracking-wider">Production Crew</span>
+                  <span className="text-xs text-text-light/70 uppercase tracking-wider font-medium">Production Crew</span>
                   <span className="text-sm font-semibold text-accent-gold">{pkg.crewSize}</span>
                 </div>
 
@@ -73,7 +73,7 @@ export const InvestmentPackages: React.FC<InvestmentPackagesProps> = ({ onOpenBo
                   {pkg.deliverables.map((item, idx) => (
                     <div key={idx} className="flex items-start gap-3 text-sm text-text-light/80">
                       <Check className="w-4 h-4 text-accent-gold shrink-0 mt-1" />
-                      <span className="leading-relaxed font-light">{item}</span>
+                      <span className="leading-relaxed">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -85,7 +85,7 @@ export const InvestmentPackages: React.FC<InvestmentPackagesProps> = ({ onOpenBo
                   onClick={() => onOpenBooking(pkg.name)}
                   className={`w-full py-4 px-6 rounded text-sans text-sm font-semibold transition-all flex items-center justify-center gap-3 cursor-pointer shadow-lg ${
                     pkg.highlighted
-                      ? 'bg-accent-gold hover:bg-yellow-600 text-brand-primary'
+                      ? 'bg-accent-gold hover:bg-gold-soft text-brand-primary'
                       : 'bg-white/10 hover:bg-white/20 text-text-light border border-white/20'
                   }`}
                 >

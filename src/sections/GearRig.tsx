@@ -47,7 +47,7 @@ export const GearRig: React.FC = () => {
   ];
 
   return (
-    <section id="equipment" className="py-20 sm:py-32 bg-brand-primary border-t border-white/5 relative">
+    <section id="equipment" className="py-20 sm:py-32 bg-brand-ivory border-t border-brand-teal/10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -57,15 +57,15 @@ export const GearRig: React.FC = () => {
         >
           <div className="inline-flex items-center gap-3 mb-6 justify-center">
             <span className="w-10 h-[1px] bg-accent-gold" />
-            <span className="font-sans text-xs font-semibold text-accent-gold uppercase tracking-[0.2em]">
+            <span className="font-sans text-xs text-gold-deep uppercase tracking-[0.2em] font-medium">
               Technical Architecture
             </span>
             <span className="w-10 h-[1px] bg-accent-gold" />
           </div>
-          <h2 className="font-cormorant text-4xl sm:text-5xl lg:text-6xl font-medium text-text-light tracking-tight mt-2">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl text-brand-teal tracking-tight mt-2 font-cormorant font-semibold">
             The Production Rig
           </h2>
-          <p className="mt-6 text-sm sm:text-base text-text-light/70 font-sans">
+          <p className="mt-6 text-sm sm:text-base text-brand-ink/70 font-sans">
             We invest in the gold standard of global cinema and television broadcast hardware. Every
             camera, lens, and bonded transmitter is redundant-backed to ensure flawless execution.
           </p>
@@ -81,13 +81,13 @@ export const GearRig: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
                 key={group.category}
-                className="p-8 rounded-2xl bg-brand-dark border border-white/5 hover:border-accent-gold/40 shadow-sm hover:shadow-xl transition-all group"
+                className="p-8 rounded-2xl bg-white border border-brand-teal/10 hover:border-accent-gold/40 shadow-sm hover:shadow-xl transition-all group"
               >
-                <div className="flex items-center gap-4 mb-8 pb-6 border-b border-white/10">
-                  <div className="w-12 h-12 rounded-full bg-accent-gold/10 border border-accent-gold/20 flex items-center justify-center text-accent-gold group-hover:scale-110 transition-transform">
+                <div className="flex items-center gap-4 mb-8 pb-6 border-b border-brand-teal/15">
+                  <div className="w-12 h-12 rounded-full bg-accent-gold/10 border border-accent-gold/20 flex items-center justify-center text-gold-deep group-hover:scale-110 transition-transform">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="font-cormorant text-xl sm:text-2xl font-medium text-text-light">
+                  <h3 className="text-xl sm:text-2xl text-brand-teal font-cormorant font-medium">
                     {group.category}
                   </h3>
                 </div>
@@ -96,13 +96,13 @@ export const GearRig: React.FC = () => {
                   {group.items.map((gear) => (
                     <div
                       key={gear.name}
-                      className="flex items-start justify-between gap-4 p-4 rounded-xl bg-white/5 border border-white/5 group-hover:border-white/10 transition-colors"
+                      className="flex items-start justify-between gap-4 p-4 rounded-xl bg-brand-teal/5 border border-brand-teal/10 group-hover:border-brand-teal/15 transition-colors"
                     >
                       <div>
-                        <p className="text-sm font-medium text-text-light">{gear.name}</p>
-                        <p className="text-xs text-text-light/50 mt-1 font-sans font-light uppercase tracking-wider">{gear.role}</p>
+                        <p className="text-sm font-medium text-brand-teal">{gear.name}</p>
+                        <p className="text-xs text-brand-ink/50 mt-1 font-sans uppercase tracking-wider font-medium">{gear.role}</p>
                       </div>
-                      <span className="text-[10px] font-mono text-accent-gold px-2.5 py-1 rounded bg-accent-gold/10 border border-accent-gold/20 whitespace-nowrap shrink-0 font-medium tracking-widest">
+                      <span className="text-[10px] font-sans text-gold-deep px-2.5 py-1 rounded bg-accent-gold/10 border border-accent-gold/20 whitespace-nowrap shrink-0 font-medium tracking-widest">
                         PRO TIER
                       </span>
                     </div>
@@ -117,20 +117,20 @@ export const GearRig: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 sm:mt-16 p-6 sm:p-8 rounded-xl bg-brand-dark border border-white/5 shadow-sm flex flex-wrap items-center justify-center sm:justify-around gap-6 sm:gap-4 text-xs sm:text-sm text-text-light/80 font-sans tracking-wide"
+          className="mt-12 sm:mt-16 p-6 sm:p-8 rounded-xl bg-white border border-brand-teal/10 shadow-sm flex flex-wrap items-center justify-center sm:justify-around gap-6 sm:gap-4 text-xs sm:text-sm text-brand-ink/80 font-sans tracking-wide"
         >
           <div className="flex items-center gap-3">
-            <ShieldCheck className="w-5 h-5 text-accent-gold" />
+            <ShieldCheck className="w-5 h-5 text-gold-deep" />
             <span>Dual Backup Camera Bodies</span>
           </div>
-          <div className="hidden sm:block w-px h-6 bg-white/10" />
+          <div className="hidden sm:block w-px h-6 bg-brand-teal/10" />
           <div className="flex items-center gap-3">
-            <Cpu className="w-5 h-5 text-accent-gold" />
+            <Cpu className="w-5 h-5 text-gold-deep" />
             <span>Simultaneous 10-Bit Recording</span>
           </div>
-          <div className="hidden sm:block w-px h-6 bg-white/10" />
+          <div className="hidden sm:block w-px h-6 bg-brand-teal/10" />
           <div className="flex items-center gap-3">
-            <Radio className="w-5 h-5 text-accent-gold" />
+            <Radio className="w-5 h-5 text-gold-deep" />
             <span>Encrypted Feed Protection</span>
           </div>
         </motion.div>

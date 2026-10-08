@@ -13,7 +13,7 @@ const REASONS = [
 
 export const WhyChooseUs: React.FC = () => {
   return (
-    <section className="py-20 sm:py-32 bg-brand-primary relative border-t border-white/5 overflow-hidden">
+    <section className="py-20 sm:py-32 bg-brand-ivory relative border-t border-brand-teal/10 overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent-gold/5 rounded-full blur-[120px] pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -25,12 +25,12 @@ export const WhyChooseUs: React.FC = () => {
         >
           <div className="inline-flex items-center gap-3 mb-6 justify-center">
             <span className="w-10 h-[1px] bg-accent-gold" />
-            <span className="font-sans text-xs font-semibold text-accent-gold uppercase tracking-[0.2em]">
+            <span className="font-sans text-xs text-gold-deep uppercase tracking-[0.2em] font-medium">
               The Gold Standard
             </span>
             <span className="w-10 h-[1px] bg-accent-gold" />
           </div>
-          <h2 className="font-cormorant text-4xl sm:text-5xl lg:text-6xl font-medium text-text-light tracking-tight">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl text-brand-teal tracking-tight font-cormorant font-semibold">
             Why Shri Vani Jagat?
           </h2>
         </motion.div>
@@ -45,16 +45,16 @@ export const WhyChooseUs: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="group p-8 rounded-2xl bg-brand-dark/50 border border-white/5 hover:border-accent-gold/30 hover:bg-[#1A1612] transition-all duration-300 relative overflow-hidden"
+                className="group p-8 rounded-2xl bg-white/70 border border-brand-teal/10 hover:border-accent-gold/30 hover:bg-white transition-all duration-300 relative overflow-hidden"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-accent-gold/5 rounded-full blur-[50px] group-hover:bg-accent-gold/10 transition-colors" />
                 
                 <div className="relative z-10">
-                  <Icon className="w-8 h-8 text-accent-gold mb-6 stroke-[1.5]" />
-                  <h3 className="font-cormorant text-2xl font-medium text-text-light mb-3">
+                  <Icon className="w-8 h-8 text-gold-deep mb-6 stroke-[1.5]" />
+                  <h3 className="text-2xl text-brand-teal mb-3 font-cormorant font-medium">
                     {reason.title}
                   </h3>
-                  <p className="font-sans text-sm text-text-light/60 font-light leading-relaxed group-hover:text-text-light/80 transition-colors">
+                  <p className="font-sans text-sm text-brand-ink/60 font-normal leading-relaxed group-hover:text-brand-ink/80 transition-colors">
                     {reason.desc}
                   </p>
                 </div>

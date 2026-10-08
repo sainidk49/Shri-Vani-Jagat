@@ -68,8 +68,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenFilmModal }
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled
-            ? 'bg-brand-primary/95 backdrop-blur-md border-b border-white/5 py-4 shadow-2xl'
-            : 'bg-transparent py-6'
+            ? 'bg-brand-ivory/95 backdrop-blur-md border-b border-brand-teal/10 py-3 shadow-[0_8px_30px_rgba(0,63,70,0.08)]'
+            : 'bg-brand-ivory py-4 border-b border-brand-teal/10'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,7 +83,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenFilmModal }
               }}
               className="flex items-center"
             >
-              <BrandLogo variant="light" size="md" />
+              <BrandLogo variant="dark" size="md" />
             </a>
 
             {/* Desktop Navigation */}
@@ -92,7 +92,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenFilmModal }
                 <button
                   key={link.label}
                   onClick={() => handleNavClick(link.href)}
-                  className="text-sm font-medium text-text-light/80 hover:text-accent-gold transition-colors tracking-wide cursor-pointer"
+                  className="text-sm font-medium text-brand-teal/85 hover:text-gold-deep transition-colors tracking-wide cursor-pointer"
                 >
                   {link.label}
                 </button>
@@ -101,18 +101,25 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenFilmModal }
                 href="https://youtube.com/@shreevanijagat"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium text-text-light/80 hover:text-accent-gold transition-colors tracking-wide flex items-center gap-1.5"
+                className="text-sm font-medium text-brand-teal/85 hover:text-gold-deep transition-colors tracking-wide flex items-center gap-1.5"
               >
                 <span>YouTube</span>
-                <Youtube className="w-4 h-4 text-red-500" />
+                <Youtube className="w-4 h-4 text-red-600" />
               </a>
+              <button
+                onClick={onOpenFilmModal}
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-brand-teal hover:bg-brand-primary text-brand-ivory text-sm tracking-wide transition-colors cursor-pointer font-semibold"
+              >
+                <Play className="w-3.5 h-3.5 fill-accent-gold text-accent-gold" />
+                <span>Showreel</span>
+              </button>
             </nav>
 
             {/* Mobile Toggle */}
             <div className="lg:hidden flex items-center">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 text-text-light hover:text-accent-gold transition-colors cursor-pointer"
+                className="p-2 text-brand-teal hover:text-gold-deep transition-colors cursor-pointer"
               >
                 {mobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
               </button>
@@ -128,19 +135,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenFilmModal }
         }`}
       >
         <div
-          className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+          className="absolute inset-0 bg-brand-deep/70 backdrop-blur-sm"
           onClick={() => setMobileMenuOpen(false)}
         />
         <div
-          className={`absolute top-0 right-0 w-4/5 max-w-sm h-full bg-brand-primary border-l border-white/5 p-6 flex flex-col shadow-2xl transition-transform duration-500 ${
+          className={`absolute top-0 right-0 w-4/5 max-w-sm h-full bg-brand-ivory border-l border-brand-teal/10 p-6 flex flex-col shadow-2xl transition-transform duration-500 ${
             mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
-          <div className="flex items-center justify-between pb-6 border-b border-white/10 mt-2">
-            <BrandLogo variant="light" size="sm" />
+          <div className="flex items-center justify-between pb-6 border-b border-brand-teal/15 mt-2">
+            <BrandLogo variant="dark" size="sm" />
             <button
               onClick={() => setMobileMenuOpen(false)}
-              className="p-2 text-text-light hover:text-accent-gold cursor-pointer"
+              className="p-2 text-brand-teal hover:text-gold-deep cursor-pointer"
             >
               <X className="w-6 h-6" />
             </button>
@@ -151,7 +158,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenFilmModal }
               <button
                 key={link.label}
                 onClick={() => handleNavClick(link.href)}
-                className="flex items-center justify-between p-3 rounded-lg text-left text-base font-medium text-text-light/90 hover:text-accent-gold hover:bg-white/5 transition-all cursor-pointer"
+                className="flex items-center justify-between p-3 rounded-lg text-left text-base font-medium text-brand-teal hover:text-gold-deep hover:bg-brand-teal/5 transition-all cursor-pointer"
               >
                 <span>{link.label}</span>
                 <ChevronRight className="w-4 h-4 opacity-50" />
@@ -161,25 +168,25 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onOpenFilmModal }
               href="https://youtube.com/@shreevanijagat"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between p-3 rounded-lg text-left text-base font-medium text-text-light/90 hover:text-accent-gold hover:bg-white/5 transition-all cursor-pointer"
+              className="flex items-center justify-between p-3 rounded-lg text-left text-base font-medium text-brand-teal hover:text-gold-deep hover:bg-brand-teal/5 transition-all cursor-pointer"
             >
               <div className="flex items-center gap-2">
                 <span>YouTube</span>
-                <Youtube className="w-4 h-4 text-red-500" />
+                <Youtube className="w-4 h-4 text-red-600" />
               </div>
               <ChevronRight className="w-4 h-4 opacity-50" />
             </a>
           </nav>
 
-          <div className="pt-6 border-t border-white/10 mb-6">
+          <div className="pt-6 border-t border-brand-teal/15 mb-6">
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
                 onOpenFilmModal();
               }}
-              className="w-full flex items-center justify-center gap-2 py-3.5 px-4 text-sm font-medium text-brand-primary bg-accent-gold hover:bg-yellow-600 rounded shadow-xl active:scale-95 transition-all cursor-pointer"
+              className="w-full flex items-center justify-center gap-2 py-3.5 px-4 text-sm font-medium text-brand-ivory bg-brand-teal hover:bg-brand-primary rounded shadow-xl active:scale-95 transition-all cursor-pointer"
             >
-              <Play className="w-4 h-4 fill-brand-primary" />
+              <Play className="w-4 h-4 fill-accent-gold text-accent-gold" />
               <span>Watch Showreel</span>
             </button>
           </div>

@@ -116,7 +116,7 @@ export default function App() {
 
         <button
           onClick={() => handleOpenBooking()}
-          className="hidden sm:inline-flex items-center gap-2 px-4 py-3 rounded-full bg-accent-gold hover:bg-yellow-600 text-brand-primary font-semibold text-xs shadow-xl transition-all cursor-pointer"
+          className="hidden sm:inline-flex items-center gap-2 px-4 py-3 rounded-full bg-accent-gold hover:bg-gold-soft text-brand-primary font-semibold text-xs shadow-xl transition-all cursor-pointer"
         >
           <Calendar className="w-3.5 h-3.5" />
           <span>BOOK YOUR EVENT →</span>

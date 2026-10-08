@@ -49,12 +49,12 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({
         >
           <div className="inline-flex items-center gap-3 mb-6 justify-center">
             <span className="w-10 h-[1px] bg-accent-gold" />
-            <span className="font-sans text-xs font-semibold text-accent-gold uppercase tracking-[0.2em]">
+            <span className="font-sans text-xs text-accent-gold uppercase tracking-[0.2em] font-medium">
               Curated Archives
             </span>
             <span className="w-10 h-[1px] bg-accent-gold" />
           </div>
-          <h2 className="font-cormorant text-4xl sm:text-5xl lg:text-6xl font-medium text-text-light tracking-tight mt-2">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl text-text-light tracking-tight mt-2 font-cormorant font-semibold">
             Selected Works & Broadcast Films
           </h2>
           <p className="mt-6 text-sm sm:text-base text-text-light/70 font-sans">
@@ -95,7 +95,7 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({
                 className={`group rounded-xl overflow-hidden bg-brand-dark border border-white/5 hover:border-accent-gold/40 transition-all duration-500 cursor-pointer shadow-lg hover:shadow-2xl hover:shadow-accent-gold/10 ${index % 4 === 0 || index % 4 === 3 ? 'lg:col-span-2 sm:aspect-[2/1]' : 'aspect-square sm:aspect-[4/5]'} relative flex flex-col justify-between`}
               >
                 {/* Media Preview Box */}
-                <div className="absolute inset-0 w-full h-full overflow-hidden bg-[#111]">
+                <div className="absolute inset-0 w-full h-full overflow-hidden bg-brand-deep">
                   <img
                     src={item.image}
                     alt={item.title}
@@ -106,11 +106,11 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({
 
                   {/* Top Overlay Tags */}
                   <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
-                    <span className="text-[10px] font-sans font-semibold px-3 py-1 rounded bg-black/60 backdrop-blur-md text-accent-gold uppercase tracking-widest border border-white/10">
+                    <span className="text-[10px] font-sans px-3 py-1 rounded bg-black/60 backdrop-blur-md text-accent-gold uppercase tracking-widest border border-white/10 font-medium">
                       {item.categoryLabel}
                     </span>
                     {item.metrics && (
-                      <span className="text-[10px] font-sans px-3 py-1 rounded bg-red-600/90 text-white font-semibold flex items-center gap-1.5 uppercase tracking-widest">
+                      <span className="text-[10px] font-sans px-3 py-1 rounded bg-red-600/90 text-white flex items-center gap-1.5 uppercase tracking-widest font-medium">
                         <Radio className="w-3 h-3 animate-pulse" />
                         {item.metrics}
                       </span>
@@ -134,7 +134,7 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({
                     <span className="tabular-nums font-semibold">{item.year}</span>
                   </div>
 
-                  <h3 className="font-cormorant text-2xl sm:text-3xl font-medium text-text-light group-hover:text-accent-gold transition-colors leading-snug drop-shadow-md">
+                  <h3 className="text-2xl sm:text-3xl text-text-light group-hover:text-accent-gold transition-colors leading-snug drop-shadow-md font-cormorant font-medium">
                     {item.title}
                   </h3>
                 </div>
@@ -167,7 +167,7 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({
             {/* Modal Header */}
             <div className="flex items-center justify-between p-5 sm:p-6 border-b border-white/10 sticky top-0 bg-brand-primary/95 backdrop-blur-md z-20">
               <div className="flex items-center gap-3">
-                <span className="text-[10px] font-sans uppercase px-3 py-1 rounded bg-accent-gold/10 text-accent-gold border border-accent-gold/30 font-semibold tracking-widest">
+                <span className="text-[10px] font-sans uppercase px-3 py-1 rounded bg-accent-gold/10 text-accent-gold border border-accent-gold/30 tracking-widest font-medium">
                   {selectedItem.categoryLabel}
                 </span>
                 <span className="text-sm text-text-light/60 hidden sm:inline font-medium">
@@ -192,7 +192,7 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none" />
               <div className="absolute bottom-6 left-6 right-6 text-text-light">
-                <h3 className="font-cormorant text-3xl sm:text-4xl font-medium text-text-light drop-shadow-xl mb-2">
+                <h3 className="text-3xl sm:text-4xl text-text-light drop-shadow-xl mb-2 font-cormorant font-medium">
                   {selectedItem.title}
                 </h3>
                 <p className="text-sm text-accent-gold font-sans tracking-wide">
@@ -204,17 +204,17 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({
             {/* Modal Body Info on Dark */}
             <div className="p-6 sm:p-8 space-y-8 bg-brand-dark">
               <div>
-                <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-accent-gold mb-3">
+                <h4 className="text-xs uppercase tracking-[0.2em] text-accent-gold mb-3 font-medium">
                   Production Overview
                 </h4>
-                <p className="text-sm sm:text-base text-text-light/80 font-sans leading-relaxed font-light">
+                <p className="text-sm sm:text-base text-text-light/80 font-sans leading-relaxed font-normal">
                   {selectedItem.description}
                 </p>
               </div>
 
               {/* Equipment Breakdown */}
               <div className="p-6 rounded-xl bg-brand-primary border border-white/5">
-                <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-accent-gold mb-4 flex items-center gap-2">
+                <h4 className="text-xs uppercase tracking-[0.2em] text-accent-gold mb-4 flex items-center gap-2 font-medium">
                   <Camera className="w-4 h-4" />
                   Equipment & Technology Deployed
                 </h4>
@@ -238,7 +238,7 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded text-sm font-semibold text-[#25D366] bg-[#25D366]/10 border border-[#25D366]/30 hover:bg-[#25D366]/20 transition-colors"
+                  className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded text-sm text-[#25D366] bg-[#25D366]/10 border border-[#25D366]/30 hover:bg-[#25D366]/20 transition-colors font-semibold"
                 >
                   <MessageCircle className="w-5 h-5" />
                   <span>Inquire via WhatsApp</span>
@@ -250,7 +250,7 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({
                     setSelectedItem(null);
                     onOpenBooking(itemTitle);
                   }}
-                  className="w-full sm:w-auto px-8 py-3 rounded text-sm font-semibold text-brand-primary bg-accent-gold hover:bg-yellow-600 transition-colors cursor-pointer shadow-lg"
+                  className="w-full sm:w-auto px-8 py-3 rounded text-sm font-semibold text-brand-primary bg-accent-gold hover:bg-gold-soft transition-colors cursor-pointer shadow-lg"
                 >
                   BOOK SIMILAR PRODUCTION &rarr;
                 </button>

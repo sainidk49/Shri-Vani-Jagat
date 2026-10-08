@@ -31,14 +31,14 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
         >
           <div className="inline-flex items-center gap-3 mb-6">
             <span className="w-10 h-[1px] bg-accent-gold" />
-            <span className="font-sans text-xs font-semibold text-accent-gold uppercase tracking-[0.2em]">
+            <span className="font-sans text-xs text-accent-gold uppercase tracking-[0.2em] font-medium">
               Our Expertise
             </span>
           </div>
-          <h2 className="font-cormorant text-4xl sm:text-5xl lg:text-6xl font-medium text-text-light tracking-tight mb-6">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl text-text-light tracking-tight mb-6 font-cormorant font-semibold">
             Professional Production Services
           </h2>
-          <p className="text-base sm:text-lg text-text-light/70 font-sans font-light leading-relaxed max-w-2xl">
+          <p className="text-base sm:text-lg text-text-light/70 font-sans font-normal leading-relaxed max-w-2xl">
             We bring celebrations, devotion, and special moments to audiences everywhere with uncompromising technical excellence.
           </p>
         </motion.div>
@@ -55,19 +55,19 @@ export const Services: React.FC<ServicesProps> = ({ onOpenBooking }) => {
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.05 }}
                 onClick={() => onOpenBooking(service.title)}
-                className="group p-6 sm:p-8 rounded-xl bg-brand-dark border border-white/5 hover:border-accent-gold/40 hover:bg-[#1C1814] transition-all cursor-pointer flex flex-col justify-between min-h-[240px]"
+                className="group p-6 sm:p-8 rounded-xl bg-brand-dark border border-white/5 hover:border-accent-gold/40 hover:bg-brand-teal transition-all cursor-pointer flex flex-col justify-between min-h-[240px]"
               >
                 <div>
                   <div className="flex items-center justify-between mb-8">
                     <Icon className="w-6 h-6 text-accent-gold/80 group-hover:text-accent-gold transition-colors stroke-[1.5]" />
-                    <span className="font-cormorant text-xl text-text-muted group-hover:text-accent-gold/60 transition-colors">
+                    <span className="font-cormorant text-xl text-text-muted group-hover:text-accent-gold/60 transition-colors font-semibold">
                       {service.id}
                     </span>
                   </div>
-                  <h3 className="font-sans text-lg font-medium text-text-light group-hover:text-accent-gold transition-colors mb-3">
+                  <h3 className="text-2xl text-text-light group-hover:text-accent-gold transition-colors mb-3 font-cormorant font-medium">
                     {service.title}
                   </h3>
-                  <p className="font-sans text-sm text-text-light/60 font-light leading-relaxed group-hover:text-text-light/80 transition-colors">
+                  <p className="font-sans text-sm text-text-light/60 font-normal leading-relaxed group-hover:text-text-light/80 transition-colors">
                     {service.desc}
                   </p>
                 </div>

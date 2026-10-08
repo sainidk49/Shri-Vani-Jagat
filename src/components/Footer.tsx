@@ -9,16 +9,17 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#050403] text-text-light border-t border-white/5 pt-16 pb-12 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-brand-deep text-text-light border-t-4 border-accent-gold pt-16 pb-12 relative overflow-hidden">
+      <div className="absolute inset-0 bg-mandala opacity-[0.06] pointer-events-none" />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 pb-12 border-b border-white/10">
           
           {/* Brand Column */}
           <div className="lg:col-span-5 space-y-6">
-            <BrandLogo variant="light" size="md" className="mb-2" />
+            <BrandLogo variant="light" size="lg" className="mb-2" />
 
             <p className="text-sm text-text-light/70 font-sans leading-relaxed max-w-sm">
-              Capturing sacred heritage and devotion with broadcast-tier multi-camera technology and cinematic storytelling across India and worldwide.
+              Capture · Create · Live. Event production and live broadcasting — sacred heritage, devotion and celebration captured with broadcast-tier technology and cinematic storytelling.
             </p>
 
             <div className="flex items-center gap-4">
@@ -36,7 +37,7 @@ export const Footer: React.FC = () => {
 
           {/* Quick Navigation Links */}
           <div className="lg:col-span-2 space-y-4">
-            <h4 className="font-sans text-xs font-bold text-accent-gold tracking-widest uppercase">
+            <h4 className="font-sans text-xs text-accent-gold tracking-widest uppercase font-medium">
               Navigation
             </h4>
             <ul className="space-y-2.5 text-sm text-text-light/70">
@@ -50,7 +51,7 @@ export const Footer: React.FC = () => {
 
           {/* Services Links */}
           <div className="lg:col-span-2 space-y-4">
-            <h4 className="font-sans text-xs font-bold text-accent-gold tracking-widest uppercase">
+            <h4 className="font-sans text-xs text-accent-gold tracking-widest uppercase font-medium">
               Services
             </h4>
             <ul className="space-y-2.5 text-sm text-text-light/70">
@@ -64,7 +65,7 @@ export const Footer: React.FC = () => {
 
           {/* Studio Locations & Direct Contact */}
           <div className="lg:col-span-3 space-y-4">
-            <h4 className="font-sans text-xs font-bold text-accent-gold tracking-widest uppercase">
+            <h4 className="font-sans text-xs text-accent-gold tracking-widest uppercase font-medium">
               Contact
             </h4>
             <div className="space-y-3 text-sm text-text-light/70">
@@ -99,7 +100,7 @@ export const Footer: React.FC = () => {
               href={`https://wa.me/${BRAND_DATA.whatsappNumber}?text=${encodeURIComponent(BRAND_DATA.whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-accent-gold hover:text-yellow-400 font-medium transition-colors"
+              className="text-accent-gold hover:text-gold-soft font-medium transition-colors"
             >
               WhatsApp Support
             </a>

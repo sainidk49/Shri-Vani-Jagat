@@ -32,7 +32,7 @@ export const LiveBroadcastStudio: React.FC<LiveBroadcastStudioProps> = ({ onOpen
       id: 1,
       label: 'CAM 2: 24ft Jimmy Jib Crane',
       sub: 'Dynamic Arena Sweeps',
-      image: 'https://images.unsplash.com/photo-1598890777032-bde5aed30263?auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1567506476376-1282584643ca?auto=format&fit=crop&q=80',
       lens: '24-70mm GM II',
       tag: 'Wide Atmosphere',
     },
@@ -48,7 +48,7 @@ export const LiveBroadcastStudio: React.FC<LiveBroadcastStudioProps> = ({ onOpen
       id: 3,
       label: 'CAM 4: Devotee & Close-up',
       sub: 'Emotional Candid Angle',
-      image: 'https://images.unsplash.com/photo-1596706030999-5249419163e8?auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1657020441669-10a9c43b667e?auto=format&fit=crop&q=80',
       lens: '135mm f/1.8 G-Master',
       tag: 'Spiritual Portrait',
     },
@@ -84,7 +84,7 @@ export const LiveBroadcastStudio: React.FC<LiveBroadcastStudioProps> = ({ onOpen
                 <span className="w-2 h-2 rounded-full bg-red-500 animate-ping" />
                 <span>ON AIR · 4K 60FPS</span>
               </div>
-              <span className="text-xs text-[#C9973E] hidden md:inline font-mono">
+              <span className="text-xs text-[#D4A72C] hidden md:inline font-mono">
                 ATEM Constellation 4K Switcher Unit
               </span>
             </div>
@@ -92,7 +92,7 @@ export const LiveBroadcastStudio: React.FC<LiveBroadcastStudioProps> = ({ onOpen
             {/* Live Stats Bar */}
             <div className="flex items-center gap-4 text-xs font-mono text-stone-300">
               <div className="flex items-center gap-1.5 bg-[#00262e] px-2.5 py-1 rounded border border-[#005162]/40">
-                <Users className="w-3.5 h-3.5 text-[#C9973E]" />
+                <Users className="w-3.5 h-3.5 text-[#D4A72C]" />
                 <span className="tabular-nums font-semibold text-white">{viewerCount}</span>
                 <span className="text-stone-400 hidden sm:inline">Active Viewers</span>
               </div>
@@ -117,7 +117,7 @@ export const LiveBroadcastStudio: React.FC<LiveBroadcastStudioProps> = ({ onOpen
 
             {/* Top-Left Live Watermark with #005162 Brand Identity */}
             <div className="absolute top-3 left-3 sm:top-5 sm:left-5 flex items-center gap-2 pointer-events-none">
-              <div className="px-2.5 py-1 rounded bg-[#005162]/90 backdrop-blur-md border border-[#C9973E]/60 text-white font-royal text-xs font-bold tracking-wider">
+              <div className="px-2.5 py-1 rounded bg-[#005162]/90 backdrop-blur-md border border-[#D4A72C]/60 text-white font-royal text-xs font-bold tracking-wider">
                 SHRI VANI JAGAT LIVE
               </div>
               <span className="text-[11px] font-mono text-white/95 bg-red-600 px-2 py-0.5 rounded">
@@ -131,7 +131,7 @@ export const LiveBroadcastStudio: React.FC<LiveBroadcastStudioProps> = ({ onOpen
                 <p className="text-xs sm:text-sm font-semibold tracking-wide text-white drop-shadow-md">
                   {cameraFeeds[activeCam].label}
                 </p>
-                <p className="text-[11px] sm:text-xs text-[#C9973E] font-mono drop-shadow">
+                <p className="text-[11px] sm:text-xs text-[#D4A72C] font-mono drop-shadow">
                   {cameraFeeds[activeCam].lens} · Low-Latency SDI Wireless
                 </p>
               </div>
@@ -143,7 +143,7 @@ export const LiveBroadcastStudio: React.FC<LiveBroadcastStudioProps> = ({ onOpen
                   className="p-2 sm:p-2.5 rounded-lg bg-black/70 hover:bg-[#005162] hover:text-white text-white border border-white/20 transition-colors cursor-pointer"
                   aria-label={isAudioMuted ? 'Unmute Live Audio' : 'Mute Live Audio'}
                 >
-                  <Volume2 className={`w-4 h-4 ${isAudioMuted ? 'text-gray-400' : 'text-[#C9973E]'}`} />
+                  <Volume2 className={`w-4 h-4 ${isAudioMuted ? 'text-gray-400' : 'text-[#D4A72C]'}`} />
                 </button>
                 <div className="hidden sm:flex items-center gap-1 px-2.5 py-1 rounded-lg bg-black/70 border border-white/20 text-[11px] font-mono text-emerald-400">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
@@ -156,7 +156,7 @@ export const LiveBroadcastStudio: React.FC<LiveBroadcastStudioProps> = ({ onOpen
           {/* Interactive Multi-Camera Angle Switcher Controls */}
           <div className="mt-4 sm:mt-5 pt-4 border-t border-[#173036]">
             <div className="flex items-center justify-between mb-2.5">
-              <span className="text-xs font-semibold text-[#C9973E] uppercase tracking-wider flex items-center gap-1.5">
+              <span className="text-xs font-semibold text-[#D4A72C] uppercase tracking-wider flex items-center gap-1.5">
                 <Layers className="w-3.5 h-3.5" />
                 Live Camera Angle Switcher (Click to Switch Feed):
               </span>
@@ -172,14 +172,14 @@ export const LiveBroadcastStudio: React.FC<LiveBroadcastStudioProps> = ({ onOpen
                   onClick={() => setActiveCam(cam.id)}
                   className={`text-left p-2.5 sm:p-3 rounded-lg border transition-all flex flex-col justify-between group cursor-pointer ${
                     activeCam === cam.id
-                      ? 'bg-[#003E4B] border-[#C9973E] shadow-md shadow-[#C9973E]/20 ring-1 ring-[#C9973E]'
+                      ? 'bg-[#003E4B] border-[#D4A72C] shadow-md shadow-[#D4A72C]/20 ring-1 ring-[#D4A72C]'
                       : 'bg-[#0e2126] border-[#183942] hover:border-[#005162]'
                   }`}
                 >
                   <div className="flex items-center justify-between w-full mb-1">
                     <span
                       className={`text-xs font-bold font-mono ${
-                        activeCam === cam.id ? 'text-[#C9973E]' : 'text-stone-300'
+                        activeCam === cam.id ? 'text-[#D4A72C]' : 'text-stone-300'
                       }`}
                     >
                       FEED {cam.id + 1}
@@ -235,7 +235,7 @@ export const LiveBroadcastStudio: React.FC<LiveBroadcastStudioProps> = ({ onOpen
               className="px-6 py-3 rounded-md font-sans text-xs sm:text-sm font-semibold text-white bg-[#005162] hover:bg-[#003E4B] transition-colors flex items-center justify-center gap-2 active:scale-95 cursor-pointer shadow-md shadow-[#005162]/25 border border-[#005162]"
             >
               <span>BOOK BROADCAST UNIT</span>
-              <ArrowRight className="w-4 h-4 text-[#C9973E]" />
+              <ArrowRight className="w-4 h-4 text-[#D4A72C]" />
             </button>
           </div>
         </div>

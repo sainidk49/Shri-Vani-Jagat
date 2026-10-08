@@ -88,7 +88,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Custom bespoke musical scoring & archival storage',
     ],
     equipment: ['Sony FX6 Cinema Line', 'Sony FX3', 'G-Master Primes', 'DJI Ronin RS3 Pro'],
-    image: 'https://images.unsplash.com/photo-1583939411023-14783179e581?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1587271636175-90d58cdad458?auto=format&fit=crop&q=80',
     badge: 'Signature Craft',
   },
   {
@@ -105,7 +105,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Direct LED Wall feeds and crane jimmy-jib aerial perspective',
     ],
     equipment: ['Blackmagic ATEM Constellation 4K', 'Teradek Bolt 4K', 'Sound Devices 833', 'LiveU Solo'],
-    image: 'https://images.unsplash.com/photo-1514222134-b57cbb8ce073?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1567506476376-1282584643ca?auto=format&fit=crop&q=80',
     badge: 'Broadcast Grade',
   },
   {
@@ -122,7 +122,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Private password-protected high-resolution cloud gallery',
     ],
     equipment: ['Canon EOS R5C', 'Canon RF 85mm f/1.2L', 'Profoto B10X Lights'],
-    image: 'https://images.unsplash.com/photo-1550005809-91ad75fb315f?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1733759414886-6b3a5423ceb3?auto=format&fit=crop&q=80',
     badge: 'Editorial Grade',
   },
   {
@@ -139,7 +139,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Integrated live video output directly into broadcast switcher',
     ],
     equipment: ['DJI Inspire 3 Full-Frame', 'DJI Mavic 3 Cine', 'ProRes 422 HQ'],
-    image: 'https://images.unsplash.com/photo-1574015974293-817f0ebebb74?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1774724773320-7b135ff9ecc9?auto=format&fit=crop&q=80',
     badge: 'Certified Aerial',
   },
   {
@@ -156,7 +156,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       'Short social-ready cinematic reels + 4-minute signature film',
     ],
     equipment: ['Anamorphic Cinema Lenses', 'Sony FX3', 'Wireless Audio Transmitters'],
-    image: 'https://images.unsplash.com/photo-1596422846543-74c6fc1e0ddb?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1630526720753-aa4e71acf67d?auto=format&fit=crop&q=80',
     badge: 'Destination Film',
   },
 ];
@@ -169,7 +169,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Royal Wedding',
     location: 'City Palace, Udaipur',
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1583939411023-14783179e581?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1741201864879-c5e7f81c98b0?auto=format&fit=crop&q=80',
     aspectRatio: '16:9',
     description:
       'An ethereal twilight ceremony illuminated by five thousand oil lamps against the backdrop of Lake Pichola. Captured with dual cinema cameras and live telecast to family across 18 countries.',
@@ -184,7 +184,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Spiritual Live',
     location: 'Shri Dham Vrindavan & Mathura',
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1598890777032-bde5aed30263?auto=format&fit=crop&q=80',
+    image: '/assets/hero-banner.jpg',
     aspectRatio: '16:9',
     description:
       'High-altitude jimmy jib sweeps, multi-angle cinema cameras, and pristine multi-track audio broadcast capturing sacred darshan, grand mandap lighting, and tens of thousands in devotional celebration.',
@@ -200,7 +200,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Spiritual Live',
     location: 'Shri Vrindavan Dham',
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1657020441669-10a9c43b667e?auto=format&fit=crop&q=80',
     aspectRatio: '16:9',
     description:
       'Eight-camera live broadcast of a 3-day spiritual festival with over 450,000 real-time YouTube viewers. Multi-track audio mixed live with zero dropout rate.',
@@ -216,7 +216,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Pre-Wedding',
     location: 'Gulmarg, Kashmir',
     year: '2024',
-    image: 'https://images.unsplash.com/photo-1616428751508-4d56d4df6469?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1715285977619-6d9357168f46?auto=format&fit=crop&q=80',
     aspectRatio: '4:3',
     description:
       'Intimate snowscapes captured with vintage anamorphic glass, highlighting delicate warmth against pristine alpine slopes.',
@@ -231,7 +231,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Aerial Cinema',
     location: 'Fairmont, Jaipur',
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1522856417931-1e9d1dc903fb?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1686477316647-aaf835cf866d?auto=format&fit=crop&q=80',
     aspectRatio: '16:9',
     description:
       'Bird-eye aerial cinematography capturing 500 dancing guests, vintage Rolls-Royce fleet, and floral petal showers over the grand palace gates.',
@@ -246,7 +246,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Wedding Design',
     location: 'Umaid Bhawan Palace, Jodhpur',
     year: '2024',
-    image: 'https://images.unsplash.com/photo-1604928169128-444f9c8f00db?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?auto=format&fit=crop&q=80',
     aspectRatio: '4:3',
     description:
       'Architectural photography and lighting symmetry of a floral lotus mandap built with 50,000 imported marigolds and jasmine garlands.',
@@ -260,7 +260,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Spiritual Live',
     location: 'Birla Mandir, New Delhi',
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1596706030999-5249419163e8?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?auto=format&fit=crop&q=80',
     aspectRatio: '16:9',
     description:
       'Multi-angle telecast with dynamic crane movements and dedicated high-fidelity vocal feeds streamed to global audiences in high dynamic range.',
@@ -275,7 +275,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Pre-Wedding',
     location: 'Samode Palace, Rajasthan',
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1596422846543-74c6fc1e0ddb?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1735052712464-9d24b69be5f5?auto=format&fit=crop&q=80',
     aspectRatio: '4:3',
     description:
       'Golden hour portraiture through frescoed arches and antique mirror halls, celebrating the grace of royal Rajasthani architecture.',
@@ -289,7 +289,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Royal Wedding',
     location: 'Rambagh Palace, Jaipur',
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1550005809-91ad75fb315f?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1733759414886-6b3a5423ceb3?auto=format&fit=crop&q=80',
     aspectRatio: '4:3',
     description:
       'A poignant father-daughter embrace captured in quiet black and white tone, highlighting the raw, unscripted beauty of family love.',
@@ -303,7 +303,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Aerial Cinema',
     location: 'Jagmandir Island, Udaipur',
     year: '2024',
-    image: 'https://images.unsplash.com/photo-1574015974293-817f0ebebb74?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1649497539290-f26d2654a258?auto=format&fit=crop&q=80',
     aspectRatio: '16:9',
     description:
       'Low-altitude drone glide across the waters of Lake Pichola as the island sanctuary glows with thousands of floating candles.',
@@ -317,7 +317,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Pre-Wedding',
     location: 'Neemrana Fort-Palace',
     year: '2024',
-    image: 'https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1767790693205-c9f4df07a234?auto=format&fit=crop&q=80',
     aspectRatio: '4:3',
     description:
       'Soft diffused pastel tones framing a romantic stroll through cascading bougainvillea gardens and terraced fortresses.',
@@ -331,7 +331,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Ritual Detail',
     location: 'The Oberoi Rajvilas, Jaipur',
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1592652252115-412728271775?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1633104502699-b2ecf0fee294?auto=format&fit=crop&q=80',
     aspectRatio: '4:3',
     description:
       'Macro lens capture of Vedic fire reflections in heirloom polki diamonds as sacred mantras echo through the palace sanctum.',
@@ -345,7 +345,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Spiritual Live',
     location: 'Haridwar Ganga Ghats',
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1583091924610-8b0d463b2f76?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1667831617890-458ca443d799?auto=format&fit=crop&q=80',
     aspectRatio: '16:9',
     description:
       'All-night live streaming alongside the sacred river with multi-sim redundancy, providing seamless broadcast to over 600,000 households.',
@@ -374,7 +374,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Celebrations',
     location: 'The Leela Palace, Gurugram',
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1530103862676-de8892ebeea0?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1699854227507-4b9ff940652a?auto=format&fit=crop&q=80',
     aspectRatio: '4:3',
     description:
       'Candid portraits and joyful video highlights of a grand family gathering with elaborate thematic floral styling.',
@@ -388,7 +388,7 @@ export const PORTFOLIO_DATA: PortfolioItem[] = [
     categoryLabel: 'Celebrations',
     location: 'Jai Mahal Palace, Jaipur',
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1645264090488-a019de493023?auto=format&fit=crop&q=80',
     aspectRatio: '16:9',
     description:
       'Vibrant stage performances captured with high-speed shutter cameras and broadcast simultaneously onto 40ft outdoor LED screens.',
