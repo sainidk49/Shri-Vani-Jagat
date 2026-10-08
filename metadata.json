@@ -1,0 +1,6 @@
+{
+  "name": "Shri Vani Jagat - Wedding Cinema & Live Broadcast",
+  "description": "Premier luxury Indian wedding photography, cinematic films, and multi-camera live broadcasting production studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
