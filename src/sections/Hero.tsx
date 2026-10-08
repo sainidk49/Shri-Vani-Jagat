@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Radio, Camera, Plane, Monitor, Youtube } from 'lucide-react';
+import { ArrowRight, Youtube } from 'lucide-react';
 import { motion } from 'motion/react';
 
 interface HeroProps {
@@ -7,11 +7,12 @@ interface HeroProps {
   onOpenFilmModal?: () => void;
 }
 
+// Icons extracted from the brand presentation (cover slide)
 const HIGHLIGHTS = [
-  { label: 'Live Streaming', icon: Radio },
-  { label: 'Photo & Video', icon: Camera },
-  { label: 'Drone Shoot', icon: Plane },
-  { label: 'LED Wall Setup', icon: Monitor },
+  { label: 'Live Streaming', icon: '/assets/icons/icon-live.png' },
+  { label: 'Photo & Video Production', icon: '/assets/icons/icon-photo-video.png' },
+  { label: 'Drone Shoot', icon: '/assets/icons/icon-drone.png' },
+  { label: 'LED Wall Setup', icon: '/assets/icons/icon-led-wall.png' },
 ];
 
 export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
@@ -100,12 +101,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
             {/* Service highlights — from the brand presentation cover */}
             <ul className="mt-10 pt-8 border-t border-brand-teal/15 grid grid-cols-4 gap-2 sm:gap-4">
-              {HIGHLIGHTS.map(({ label, icon: Icon }) => (
-                <li key={label} className="flex flex-col items-center text-center gap-2">
-                  <span className="w-11 h-11 rounded-lg border border-brand-teal/20 bg-white/60 flex items-center justify-center text-brand-teal">
-                    <Icon className="w-5 h-5 stroke-[1.5]" />
-                  </span>
-                  <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-brand-teal/80 leading-tight font-medium">
+              {HIGHLIGHTS.map(({ label, icon }) => (
+                <li key={label} className="flex flex-col items-center text-center gap-3">
+                  <img src={icon} alt="" aria-hidden="true" className="h-9 sm:h-11 w-auto max-w-full object-contain" />
+                  <span className="text-[10px] sm:text-[11px] font-medium uppercase tracking-wider text-brand-teal leading-tight">
                     {label}
                   </span>
                 </li>
