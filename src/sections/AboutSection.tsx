@@ -22,7 +22,7 @@ export const AboutSection: React.FC<AboutProps> = ({ onOpenBooking }) => {
           >
             <div className="aspect-[4/5] rounded-2xl overflow-hidden relative shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&q=80" 
+                src="/assets/gallery/havan-ritual.webp" 
                 alt="Devotional event production" 
                 className="w-full h-full object-cover opacity-90"
               />

@@ -22,7 +22,7 @@ export const FilmPlayerModal: React.FC<FilmPlayerModalProps> = ({
       title: 'The Royal Sovereign: Udaipur Palace Wedding Film',
       category: 'Signature 4K Cinema',
       duration: '4:35',
-      image: 'https://images.unsplash.com/photo-1587271636175-90d58cdad458?auto=format&fit=crop&q=80',
+      image: '/assets/gallery/wedding-couple-confetti.webp',
       description: 'Shot on Sony FX6 Cinema Cameras with Atlas Anamorphic Prime Lenses. Edited and color-graded in DaVinci Resolve.',
     },
     {
@@ -36,7 +36,7 @@ export const FilmPlayerModal: React.FC<FilmPlayerModalProps> = ({
       title: 'Snow & Marble: Kashmir & Rajasthan Pre-Wedding Reel',
       category: 'Destination Story',
       duration: '3:45',
-      image: 'https://images.unsplash.com/photo-1630526720753-aa4e71acf67d?auto=format&fit=crop&q=80',
+      image: '/assets/gallery/snow-prewedding.webp',
       description: 'A poetic cinematic journey celebrating contrasting elements of frozen snowpeaks and sunlit Rajasthani palaces.',
     },
   ];

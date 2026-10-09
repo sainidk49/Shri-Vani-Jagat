@@ -99,10 +99,10 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover object-center group-hover:scale-[1.03] opacity-80 group-hover:opacity-100 transition-all duration-700 ease-out"
+                    className="w-full h-full object-cover object-[50%_30%] group-hover:scale-[1.03] transition-transform duration-700 ease-out"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 group-hover:bg-black/40 transition-colors duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-deep/90 via-brand-deep/25 to-transparent transition-colors duration-500" />
 
                   {/* Top Overlay Tags */}
                   <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
